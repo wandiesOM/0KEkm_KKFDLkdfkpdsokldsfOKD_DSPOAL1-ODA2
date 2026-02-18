@@ -22,7 +22,7 @@ DOCS_URL = "https://i.pinimg.com/originals/2c/92/4f/2c924f5738ab7e80986cc8ff0290
 async def bump_reminder():
     channel = bot.get_channel(CHAT_CHANNEL_ID)
     if channel:
-        role_mention = "<@&1473629581222219839" 
+        role_mention = "<@&1473629581222219839>" 
         
         embed = discord.Embed(
             title="🚀 время поднять сервер :3!",
