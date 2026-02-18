@@ -28,7 +28,7 @@ async def bump_reminder():
             description="Напишите **/bump**, пожалуйста чтобы поднять сервер в топ Dishboard :3",
             color=0xFFAC33
         )
-        await channel.send(content="@everyone", embed=embed)
+        await channel.send(content="", embed=embed)
 
 @bot.event
 async def on_ready():
