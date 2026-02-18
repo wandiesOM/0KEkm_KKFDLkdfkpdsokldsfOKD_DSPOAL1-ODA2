@@ -22,13 +22,15 @@ DOCS_URL = "https://i.pinimg.com/originals/2c/92/4f/2c924f5738ab7e80986cc8ff0290
 async def bump_reminder():
     channel = bot.get_channel(CHAT_CHANNEL_ID)
     if channel:
+        role_mention = "<@&1473629581222219839" 
+        
         embed = discord.Embed(
             title="🚀 время поднять сервер :3!",
             url=DOCS_URL,
             description="Напишите **/bump**, пожалуйста чтобы поднять сервер в топ Dishboard :3",
             color=0xFFAC33
         )
-        await channel.send(content="", embed=embed)
+        await channel.send(content=role_mention, embed=embed)
 
 @bot.event
 async def on_ready():
